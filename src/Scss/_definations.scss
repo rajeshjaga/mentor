@@ -25,6 +25,10 @@ h3 {
 }
 .page {
   margin-top: 7rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: start;
 }
 a.button {
   padding: 0.5rem 1rem;

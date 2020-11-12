@@ -8,8 +8,8 @@ const Card = ({ data: { imgurl, status, cardTitle, github, netlify } }) => {
             <div className="container">
                 <h3>{cardTitle}</h3>
                 <div className="links">
-                    <a href={github} className="button" >Code</a>
-                    <a href={netlify} className="button" >Live</a>
+                    <a href={github} className="button" _target="_blank" >Code</a>
+                    <a href={netlify} className="button" _target="_blank" >Live</a>
                 </div>
             </div>
         </div>

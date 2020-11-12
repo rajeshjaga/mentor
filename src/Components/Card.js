@@ -1,15 +1,12 @@
 import React from 'react';
 
 
-const Card = ({ src, alt, title, github, netlify }) => {
+const Card = ({ data: { imgurl, status, cardTitle, github, netlify } }) => {
     return (
-        <div className="card">
-            <img
-                src={src}
-                alt={alt}
-            />
+        <div className="card" id={status} >
+            <img src={imgurl} alt="img-project" />
             <div className="container">
-                <h3>{title}</h3>
+                <h3>{cardTitle}</h3>
                 <div className="links">
                     <a href={github} className="button" >Code</a>
                     <a href={netlify} className="button" >Live</a>
